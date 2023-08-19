@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+
+    <!-- Google fonts work sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header class="bg-[#F9F6E2] flex flex-col-reverse items-center pb-8 lg:flex-row">
+        <!-- Banner Description -->
+        <div class="text-center px-7 lg:w-1/2 lg:pl-36 lg:pr-0">
+            <p class="text-2xl md:text-4xl lg:text-3xl font-medium mb-7 mt-6">---SALE FEVER---</p>
+            <h2 class="text-4xl md:text-6xl lg:text-5xl lg:w-[500px] lg:mx-auto font-bold  mb-10">Purchase TK 200 or
+                above & get
+                <span class="text-[#E527B2]">20%
+                    off</span>
+            </h2>
+            <p class="text-2xl md:text-4xl lg:text-2xl font-medium">Use Promo Code
+                <button class="btn text-xl md:text-3xl lg:text-xl bg-[#E527B2] text-white">SELL200</button>
+            </p>
+        </div>
+        <!-- Banner Image section -->
+        <div class="p-5 lg:py-10 items-center lg:w-1/2">
+            <img src="images/Summer 1.png" alt="summer" class="lg:w-3/4">
+        </div>
+    </header>
 
 </body>
 
