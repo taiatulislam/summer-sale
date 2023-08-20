@@ -10,7 +10,6 @@ function itemCart(element) {
     listItems.append(li);
 
     // Price calculation
-
     const itemValue = document.getElementById('total-price');
     const valueSplit = itemValue.innerText.split(' ');
     const value = parseFloat(valueSplit[0]);    //total price
@@ -24,6 +23,7 @@ function itemCart(element) {
     const total = document.getElementById('total');
     total.innerText = totalValue.toFixed(2) + ' TK';
 
+    // Button activation
     if (totalValue > 0) {
         const purchase = document.getElementById('purchase');
         purchase.classList.remove('btn-disabled')
@@ -45,7 +45,7 @@ function discount() {
     const discount = document.getElementById('discount');
     const total = document.getElementById('total');
 
-
+    // Coupon validation
     if (couponValue === 'SELL200') {
         const discountValue = value * 0.2;
 
