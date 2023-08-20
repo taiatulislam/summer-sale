@@ -19,6 +19,11 @@ function itemCart(element) {
     const totalValue = value + parseFloat(elementValue.innerText);
     itemValue.innerText = totalValue.toFixed(2) + ' TK';
 
+    const discount = document.getElementById('discount');
+    discount.innerText = '00.00 TK';
+    const total = document.getElementById('total');
+    total.innerText = totalValue.toFixed(2) + ' TK';
+
     if (totalValue > 0) {
         const purchase = document.getElementById('purchase');
         purchase.classList.remove('btn-disabled')
