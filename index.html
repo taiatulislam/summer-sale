@@ -49,11 +49,11 @@
     </header>
 
     <main class="bg-[#F8F8F8]">
-        <section class="w-4/5 mx-auto flex pt-28">
+        <section class="px-10 lg:w-4/5 mx-auto flex flex-col md:flex-row lg:flex-row pt-28 pb-10">
             <!-- Product Section -->
-            <div class="w-3/4">
+            <div class="md:w-1/2 lg:w-3/4">
                 <h2 class="text-4xl font-semibold">Kitchenware</h2>
-                <div class="grid grid-cols-3 gap-5 my-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 my-8">
                     <!-- Item1 -->
                     <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
                         onclick="itemCart(this)">
@@ -114,7 +114,7 @@
                 </div>
                 <!-- Sportswear -->
                 <h2 class="text-4xl font-semibold mt-14">SportsWear</h2>
-                <div class="grid grid-cols-3 gap-5 my-8">
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-5 my-8">
                     <!-- Item4 -->
                     <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
                         onclick="itemCart(this)">
@@ -175,7 +175,7 @@
                 </div>
                 <!-- Furniture -->
                 <h2 class="text-4xl font-semibold mt-14">Furniture</h2>
-                <div class="grid grid-cols-3 gap-5 my-8">
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-5 my-8">
                     <!-- Item7 -->
                     <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
                         onclick="itemCart(this)">
@@ -238,7 +238,7 @@
 
             </div>
             <!-- Calculation Section -->
-            <div class="w-1/4 ml-6 mt-[72px]">
+            <div class="lg:w-1/4 ml-6 mt-[72px]">
                 <div class="bg-white p-6 rounded-lg">
                     <h3>Have coupon?</h3>
                     <div class="flex">
@@ -264,10 +264,10 @@
                         class="btn btn-disabled bg-[#E527B2] text-white w-full normal-case" id="purchase"
                         onclick="my_modal_5.showModal()">Make
                         Purchase</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center mx-auto">
-                        <form method="dialog" class="modal-box py-24">
+                    <dialog id="my_modal_5" class="modal modal-middle text-center">
+                        <form method="dialog" class="modal-box md:py-14 lg:py-24">
                             <img src="images/congo.png" alt="Congratulations" class="mx-auto mb-10">
-                            <h3 class="font-bold text-5xl">Congratulations</h3>
+                            <h3 class="font-bold text-3xl md:text-5xl lg:text-5xl">Congratulations</h3>
                             <p class="py-4">Your Purchase the product</p>
                             <button class="btn bg-[#E527B2] text-white w-1/4 mx-auto normal-case"
                                 onclick="document.location.href='http://127.0.0.1:5500/index.html'">Go Home</button>
