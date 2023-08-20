@@ -55,7 +55,8 @@
                 <h2 class="text-4xl font-semibold">Kitchenware</h2>
                 <div class="grid grid-cols-3 gap-5 my-8">
                     <!-- Item1 -->
-                    <div class="card bg-base-100 drop-shadow-sm">
+                    <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
+                        onclick="itemCart(this)">
                         <figure class="mt-4">
                             <img src="/images/prod1.png" alt="prod1"
                                 class="rounded-xl w-[250px] h-[200px] bg-base-200 px-[52px] py-8" />
@@ -73,7 +74,8 @@
                         </div>
                     </div>
                     <!-- Item2 -->
-                    <div class="card bg-base-100 drop-shadow-sm">
+                    <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
+                        onclick="itemCart(this)">
                         <figure class="mt-4">
                             <img src="/images/prod2.png" alt="prod2"
                                 class="rounded-xl w-[250px] h-[200px] bg-base-200 px-[52px] py-8" />
@@ -91,7 +93,8 @@
                         </div>
                     </div>
                     <!-- Item3 -->
-                    <div class="card bg-base-100 drop-shadow-sm">
+                    <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
+                        onclick="itemCart(this)">
                         <figure class="mt-4">
                             <img src="/images/prod3.png" alt="prod3"
                                 class="rounded-xl w-[250px] h-[200px] bg-base-200 px-[52px] py-8" />
@@ -113,7 +116,8 @@
                 <h2 class="text-4xl font-semibold mt-14">SportsWear</h2>
                 <div class="grid grid-cols-3 gap-5 my-8">
                     <!-- Item4 -->
-                    <div class="card bg-base-100 drop-shadow-sm">
+                    <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
+                        onclick="itemCart(this)">
                         <figure class="mt-4">
                             <img src="/images/prod4.png" alt="prod4"
                                 class="rounded-xl w-[250px] h-[200px] bg-base-200 px-[52px] py-8" />
@@ -131,7 +135,8 @@
                         </div>
                     </div>
                     <!-- Item5 -->
-                    <div class="card bg-base-100 drop-shadow-sm">
+                    <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
+                        onclick="itemCart(this)">
                         <figure class="mt-4">
                             <img src="/images/prod5.png" alt="prod5"
                                 class="rounded-xl w-[250px] h-[200px] bg-base-200 px-[52px] py-8" />
@@ -149,7 +154,8 @@
                         </div>
                     </div>
                     <!-- Item6 -->
-                    <div class="card bg-base-100 drop-shadow-sm">
+                    <div class="card bg-base-100 drop-shadow-sm hover:bg-[#e527b2a4] hover:text-white"
+                        onclick="itemCart(this)">
                         <figure class="mt-4">
                             <img src="/images/prod6.png" alt="prod6"
                                 class="rounded-xl w-[250px] h-[200px] bg-base-200 px-[52px] py-8" />
@@ -172,25 +178,33 @@
             <div class="w-1/4 ml-6 mt-[72px]">
                 <div class="bg-white p-6 rounded-lg">
                     <h3>Have coupon?</h3>
-                    <p><input type="text" name="" id="" placeholder="Coupon code"
-                            class="py-3 pl-5 rounded-l-lg rounded-r-none"><button
-                            class="btn bg-[#E527B2] text-white rounded-l-none normal-case">Apply</button>
-                    </p>
+                    <div class="flex">
+                        <input type="text" name="" id="coupon-field" placeholder="Coupon code"
+                            class="py-2 pl-3 w-4/6 rounded-l-lg rounded-r-none border-y-2 border-l-2 border-gray-200">
+                        <button class="btn btn-disabled bg-[#E527B2] text-white rounded-l-none normal-case" id="apply"
+                            onclick="discount()">Apply</button>
+                    </div>
                 </div>
                 <div class="bg-white p-6 rounded-lg mt-6 pb-10">
+                    <ol id="list-items" class="list-decimal mb-3 font-medium pl-6"></ol>
                     <hr>
-                    <p class="my-2">Total price: <span></span></p>
-                    <p class="my-2">Discount: <span></span></p>
-                    <p class="my-2">Total: <span></span></p>
+                    <p class="my-2 font-semibold">Total price: <span id="total-price"
+                            class="text-gray-400 font-normal">00.00
+                            TK</span>
+                    </p>
+                    <p class="my-2 font-medium">Discount: <span id="discount" class="text-gray-400 font-normal"></span>
+                    </p>
+                    <p class="my-2 font-medium">Total: <span id="total" class="text-gray-400 font-normal"></span></p>
                     <hr>
                 </div>
-                <div class="w-4/5 mx-auto -mt-7"><button class="btn bg-[#E527B2] text-white w-full">Make
+                <div class="w-4/5 mx-auto -mt-7"><button
+                        class="btn btn-disabled bg-[#E527B2] text-white w-full normal-case" id="purchase">Make
                         Purchase</button>
                 </div>
             </div>
         </section>
     </main>
-
+    <script src="scripts/cart.js"></script>
 </body>
 
 </html>
